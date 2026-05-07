@@ -55,6 +55,17 @@ const members = [
     'Participa en proyectos de agricultura y sostenibilidad comunitaria.',
     phrase:
     '“Trabajamos por un futuro sostenible.”'
+  },
+
+  {
+    id:5,
+    name:'Daimer Castro',
+    role:'Coodirector agricola',
+    image:'/images/equipo/Daimer.jpeg',
+    description:
+    'Participa en proyectos de agricultura y sostenibilidad comunitaria.',
+    phrase:
+    '“Trabajamos por un futuro sostenible.”'
   }
 
 ]
