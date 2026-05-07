@@ -1,10 +1,10 @@
 .donation-section {
   position: relative;
-  overflow: hidden;
   background: #bc7019;
   padding: 120px 20px;
   color: white;
   text-align: center;
+  overflow: clip;
 }
 
 .donation-container {
@@ -74,14 +74,16 @@
   background: rgba(255,255,255,0.12);
 }
 
-.donation-circle {
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  background: rgba(255,255,255,0.04);
-  border-radius: 50%;
-  top: -150px;
-  right: -100px;
+.donation-circle{
+  position:absolute;
+
+  width:300px;
+  height:300px;
+
+  top:-100px;
+  right:-120px;
+
+  pointer-events:none;
 }
 
 @media (max-width: 768px) {
@@ -96,6 +98,14 @@
 
   .donation-section p {
     font-size: 1rem;
+  }
+
+  .donation-circle{
+    width:220px;
+    height:220px;
+
+    right:-80px;
+    top:-60px;
   }
 
   .donation-buttons {

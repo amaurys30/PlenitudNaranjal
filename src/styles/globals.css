@@ -20,24 +20,27 @@
 *{
   margin:0;
   padding:0;
-  max-width: 100%;
   box-sizing:border-box;
 }
 
 html{
   scroll-behavior:smooth;
 }
+html,
+body{
+  width:100%;
+  overflow-x:hidden;
+}
 
 body{
   font-family:var(--font-body);
   background:white;
   color:var(--texto);
-  width: 100%;
-  overflow-x:hidden;
 }
 
 a{
   text-decoration:none;
+  height:auto;
   color:inherit;
 }
 

@@ -10,7 +10,7 @@
       #1b4728 100%
     );
 
-  overflow: hidden;
+  overflow: clip;
 }
 
 .impact::before{
@@ -18,18 +18,17 @@
 
   position: absolute;
 
-  top: -250px;
-  right: -250px;
+  top: -150px;
+  right: -150px;
 
-  width: 600px;
-  height: 600px;
+  width: 350px;
+  height: 350px;
 
   border-radius: 50%;
 
-  background:
-    rgba(212,175,55,0.08);
+  background: rgba(212,175,55,0.08);
 
-  z-index: 1;
+  pointer-events: none;
 }
 
 .impact-overlay{
