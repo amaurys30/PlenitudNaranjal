@@ -1,15 +1,19 @@
 import Link from 'next/link'
 
 import {
-  Globe,
-  MessageCircle,
   Mail,
   MapPin,
   Phone,
  Landmark,
-  Send,
   Leaf
 } from 'lucide-react'
+
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaYoutube
+} from 'react-icons/fa'
+
 
 
 export default function Footer(){
@@ -149,18 +153,29 @@ export default function Footer(){
           </p>
 
           <div className="footer-socials">
-            <a href="#">
-                <Globe size={30} />
+
+            <a
+              href="https://facebook.com"
+              target="_blank"
+            >
+              <FaFacebookF />
             </a>
 
-            <a href="#">
-                <Leaf size={30} />
+            <a
+              href="https://instagram.com"
+              target="_blank"
+            >
+              <FaInstagram />
             </a>
 
-            <a href="#">
-                <MessageCircle size={30} />
+            <a
+              href="https://youtube.com"
+              target="_blank"
+            >
+              <FaYoutube />
             </a>
-        </div>
+
+          </div>
 
         </div>
 
@@ -168,47 +183,6 @@ export default function Footer(){
 
       {/* NEWSLETTER */}
 
-      <div className="footer-newsletter">
-
-        <div className="newsletter-left">
-
-          <div className="newsletter-icon">
-            <Leaf size={26}/>
-          </div>
-
-          <div>
-
-            <h4>
-              Mantente informado
-            </h4>
-
-            <p>
-              Recibe noticias, eventos y avances
-              de nuestros proyectos.
-            </p>
-
-          </div>
-
-        </div>
-
-        <div className="newsletter-form">
-
-          <input
-            type="email"
-            placeholder="Tu correo electrónico"
-          />
-
-          <button>
-
-            Suscribirme
-
-            <Send size={18}/>
-
-          </button>
-
-        </div>
-
-      </div>
 
       {/* BOTTOM */}
 

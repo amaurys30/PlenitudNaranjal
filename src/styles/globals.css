@@ -8,6 +8,8 @@
 @import './sections/projects.css';
 @import './sections/about.css';
 @import './sections/impact.css';
+@import './sections/donation.css';
+@import './sections/contact.css';
 
 *{
   margin:0;
