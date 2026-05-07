@@ -1,0 +1,24 @@
+:root{
+
+  --verde:#1a4a2e;
+  --verde-claro:#2d6e44;
+  --verde-suave:#e8f2ec;
+
+  --ambar:#c8791f;
+  --ambar-claro:#e8a84a;
+  --ambar-palido:#fdf3e3;
+
+  --crema:#f7f3ed;
+  --cafe:#5c3010;
+
+  --texto:#1e1a14;
+  --texto-suave:#5a5248;
+
+  --blanco:#ffffff;
+
+  --radio:16px;
+
+  --sombra:
+  0 10px 30px rgba(0,0,0,.08);
+
+}

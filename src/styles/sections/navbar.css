@@ -1,0 +1,76 @@
+.navbar{
+
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+
+  height:80px;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  padding:0 5vw;
+
+  z-index:1000;
+
+  transition:.3s;
+
+}
+
+.navbar.scrolled{
+
+  background:rgba(26,74,46,.95);
+
+  backdrop-filter:blur(10px);
+
+}
+
+.logo{
+
+  font-size:1.7rem;
+  font-weight:700;
+
+  color:white;
+
+}
+
+.logo span{
+
+  color:var(--ambar-claro);
+
+}
+
+.nav-links{
+
+  display:flex;
+  align-items:center;
+  gap:2rem;
+
+}
+
+.nav-links a{
+
+  color:white;
+  font-weight:600;
+
+  transition:.2s;
+
+}
+
+.nav-links a:hover{
+
+  color:var(--ambar-claro);
+
+}
+
+.btn-nav{
+
+  background:var(--ambar);
+
+  padding:.7rem 1.5rem;
+
+  border-radius:999px;
+
+}
