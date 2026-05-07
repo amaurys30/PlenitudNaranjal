@@ -3,7 +3,9 @@
   position:fixed;
   top:0;
   left:0;
-  right:0;
+  /*right:0;*/
+  width: 100%;
+  box-sizing: border-box;
 
   height:80px;
 
@@ -178,6 +180,9 @@
   .nav-links{
 
     display:none;
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
 
   }
 
