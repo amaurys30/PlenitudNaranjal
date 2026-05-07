@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
@@ -32,7 +33,19 @@ export default function Navbar(){
         {/* LOGO */}
 
         <Link href="/" className="logo">
-          Plenitud <span>NR</span>
+
+          <Image
+            src="/images/logo.jpeg"
+            alt="Logo Nutra Asociación"
+            width={45}
+            height={45}
+            className="logo-image"
+          />
+
+          <span className="logo-text">
+            Plenitud <span>NR</span>
+          </span>
+
         </Link>
 
         {/* DESKTOP MENU */}

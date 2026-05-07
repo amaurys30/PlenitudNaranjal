@@ -17,6 +17,9 @@
 @import './about/team.css';
 @import './about/timeLine.css';
 
+@import './projects/projectsHero.css';
+
+
 *{
   margin:0;
   padding:0;
