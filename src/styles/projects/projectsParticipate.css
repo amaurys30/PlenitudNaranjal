@@ -1,0 +1,367 @@
+/* =========================================================
+   PROJECTS PARTICIPATE SECTION
+========================================================= */
+
+.projects-participate-section{
+  position: relative;
+  overflow: hidden;
+  padding: 8rem 5vw;
+  background:
+    linear-gradient(
+      180deg,
+      #f7f3ed 0%,
+      #ffffff 100%
+    );
+}
+
+.projects-participate-glow{
+  position: absolute;
+  top: -220px;
+  right: -180px;
+
+  width: 600px;
+  height: 600px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(232,168,74,0.18) 0%,
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+.projects-participate-container{
+  position: relative;
+  z-index: 2;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.projects-participate-header{
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 4.5rem auto;
+}
+
+.projects-participate-label{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.55rem 1.3rem;
+
+  border-radius: 999px;
+
+  background: rgba(26,74,46,0.08);
+
+  border: 1px solid rgba(26,74,46,0.12);
+
+  color: #c8791f;
+
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.projects-participate-header h2{
+  margin-top: 1.5rem;
+
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.05;
+  font-weight: 700;
+
+  color: #1a1a1a;
+}
+
+.projects-participate-header h2 span{
+  color: #c8791f;
+  font-style: italic;
+}
+
+.projects-participate-header p{
+  margin-top: 1.4rem;
+
+  font-size: 1.05rem;
+  line-height: 1.9;
+
+  color: #6a6a6a;
+}
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.projects-participate-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.8rem;
+}
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.participate-card{
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 360px;
+
+  padding: 2.2rem;
+
+  border-radius: 30px;
+
+  background:
+    rgba(255,255,255,0.75);
+
+  border:
+    1px solid rgba(255,255,255,0.7);
+
+  backdrop-filter: blur(18px);
+
+  transition:
+    transform 0.45s ease,
+    box-shadow 0.45s ease,
+    border-color 0.45s ease;
+}
+
+.participate-card:hover{
+  transform:
+    translateY(-12px);
+
+  box-shadow:
+    0 25px 60px rgba(0,0,0,0.12);
+
+  border-color:
+    rgba(200,121,31,0.2);
+}
+
+.participate-card-blur{
+  position: absolute;
+  top: -60px;
+  right: -60px;
+
+  width: 180px;
+  height: 180px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(232,168,74,0.18) 0%,
+      transparent 75%
+    );
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   ICONS
+========================================================= */
+
+.participate-icon{
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 78px;
+  height: 78px;
+
+  border-radius: 24px;
+
+  margin-bottom: 1.8rem;
+
+  transition:
+    transform 0.4s ease,
+    rotate 0.4s ease;
+}
+
+.participate-card:hover .participate-icon{
+  transform: translateY(-4px);
+  rotate: -4deg;
+}
+
+/* DONAR */
+
+.icon-heart{
+  color: #e63946;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(230,57,70,0.15),
+      rgba(230,57,70,0.05)
+    );
+
+  border:
+    1px solid rgba(230,57,70,0.2);
+
+  box-shadow:
+    0 10px 30px rgba(230,57,70,0.15);
+}
+
+/* VOLUNTARIO */
+
+.icon-help{
+  color: #2a9d8f;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(42,157,143,0.15),
+      rgba(42,157,143,0.05)
+    );
+
+  border:
+    1px solid rgba(42,157,143,0.2);
+
+  box-shadow:
+    0 10px 30px rgba(42,157,143,0.15);
+}
+
+/* COMPARTIR */
+
+.icon-share{
+  color: #4361ee;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(67,97,238,0.15),
+      rgba(67,97,238,0.05)
+    );
+
+  border:
+    1px solid rgba(67,97,238,0.2);
+
+  box-shadow:
+    0 10px 30px rgba(67,97,238,0.15);
+}
+
+/* PANELA */
+
+.icon-panela{
+  color: #c8791f;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(200,121,31,0.18),
+      rgba(200,121,31,0.05)
+    );
+
+  border:
+    1px solid rgba(200,121,31,0.2);
+
+  box-shadow:
+    0 10px 30px rgba(200,121,31,0.15);
+}
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.participate-card h3{
+  font-size: 1.45rem;
+  font-weight: 700;
+
+  color: #1a1a1a;
+
+  margin-bottom: 1rem;
+}
+
+.participate-card p{
+  flex: 1;
+
+  font-size: 0.98rem;
+  line-height: 1.85;
+
+  color: #6a6a6a;
+}
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.participate-link{
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+
+  width: fit-content;
+
+  margin-top: 2rem;
+
+  padding:
+    0.9rem 1.5rem;
+
+  border-radius: 999px;
+
+  background:
+    #1a4a2e;
+
+  color: white;
+
+  font-size: 0.92rem;
+  font-weight: 700;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    gap 0.3s ease;
+}
+
+.participate-link:hover{
+  background: #25613e;
+
+  transform:
+    translateY(-2px);
+
+  gap: 1rem;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px){
+
+  .projects-participate-grid{
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px){
+
+  .projects-participate-section{
+    padding: 6rem 1.5rem;
+  }
+
+  .projects-participate-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .projects-participate-header h2{
+    font-size: 2.8rem;
+  }
+
+  .participate-card{
+    min-height: auto;
+  }
+}

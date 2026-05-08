@@ -18,6 +18,9 @@
 @import './about/timeLine.css';
 
 @import './projects/projectsHero.css';
+@import './projects/projectsPanels.css';
+@import './projects/projectsDetail.css';
+@import './projects/projectsParticipate.css';
 
 
 *{

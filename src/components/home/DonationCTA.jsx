@@ -20,7 +20,7 @@ export default function DonationCTA() {
 
         <div className="donation-buttons">
           <Link href="/donaciones" className="btn-primary">
-            Donar Ahora
+            ❤️ Quiero donar
           </Link>
 
           <Link href="/contacto" className="btn-secondary">

@@ -1,0 +1,247 @@
+.projects-panels-section {
+  background: #151515;
+  padding: 6rem 0 0;
+  overflow: hidden;
+}
+
+.projects-panels-intro {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 5vw;
+}
+
+.projects-panels-label {
+  display: inline-flex;
+  padding: 0.45rem 1.2rem;
+  border-radius: 999px;
+  background: rgba(232, 168, 74, 0.12);
+  border: 1px solid rgba(232, 168, 74, 0.25);
+  color: #e8a84a;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 1.4rem;
+}
+
+.projects-panels-intro h2 {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.1;
+  color: white;
+  font-family: 'Cormorant Garamond', serif;
+  margin-bottom: 1rem;
+}
+
+.projects-panels-intro h2 span {
+  color: #e8a84a;
+  font-style: italic;
+}
+
+.projects-panels-intro p {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.8;
+}
+
+.projects-panels-wrap {
+  margin-top: 4rem;
+  display: flex;
+  height: 82vh;
+  min-height: 560px;
+}
+
+.project-panel {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  transition: flex 0.7s ease;
+}
+
+.project-panel.active {
+  flex: 4.5;
+}
+
+.project-panel-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.08);
+  transition: transform 0.8s ease;
+}
+
+.project-panel.active .project-panel-bg {
+  transform: scale(1);
+}
+
+.project-panel-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  transition: background 0.5s ease;
+}
+
+.project-panel.active .project-panel-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.project-panel-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.92) 0%,
+    transparent 60%
+  );
+}
+
+.project-panel-number {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  z-index: 3;
+  font-size: 5rem;
+  font-family: 'Cormorant Garamond', serif;
+  color: white;
+  opacity: 0.16;
+  font-weight: 700;
+}
+
+.project-panel-mini {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  right: 1.8rem;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  writing-mode: vertical-lr;
+  transition: opacity 0.35s ease;
+}
+
+.project-panel.active .project-panel-mini {
+  opacity: 0;
+}
+
+.project-panel-emoji {
+  font-size: 2rem;
+  writing-mode: horizontal-tb;
+}
+
+.project-panel-mini-title {
+  font-size: 1.1rem;
+  color: white;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+}
+
+.project-panel-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  max-width: 560px;
+  padding: 2.5rem 3rem 3rem;
+  opacity: 0;
+  transform: translateY(25px);
+  transition: 0.45s ease;
+}
+
+.project-panel.active .project-panel-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-panel-badge {
+  display: inline-flex;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: white;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1.3rem;
+}
+
+.project-panel-content h3 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 1;
+  color: white;
+  font-family: 'Cormorant Garamond', serif;
+  margin-bottom: 1rem;
+}
+
+.project-panel-content p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.8;
+  max-width: 480px;
+  margin-bottom: 2rem;
+}
+
+.project-panel-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: white;
+  color: #151515;
+  padding: 0.9rem 1.8rem;
+  border-radius: 999px;
+  font-weight: 800;
+  transition: 0.25s ease;
+}
+
+.project-panel-button:hover {
+  transform: translateY(-3px);
+  gap: 1rem;
+}
+
+.project-panel + .project-panel::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5%;
+  bottom: 5%;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.12);
+  z-index: 5;
+}
+
+@media (max-width: 768px) {
+  .projects-panels-wrap {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .project-panel {
+    height: 320px;
+    flex: none !important;
+  }
+
+  .project-panel.active {
+    height: 500px;
+  }
+
+  .project-panel-mini {
+    writing-mode: horizontal-tb;
+    right: auto;
+    left: 50%;
+    top: auto;
+    bottom: 1.5rem;
+    transform: translateX(-50%);
+  }
+
+  .project-panel-content {
+    padding: 2rem;
+  }
+
+  .project-panel-content h3 {
+    font-size: 2.6rem;
+  }
+}
