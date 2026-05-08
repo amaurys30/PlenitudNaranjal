@@ -22,6 +22,9 @@
 @import './projects/projectsDetail.css';
 @import './projects/projectsParticipate.css';
 
+@import './projects/campamentos/campHero.css';
+@import './projects/campamentos/campAbout.css';
+
 
 *{
   margin:0;
