@@ -24,7 +24,10 @@
 
 @import './projects/campamentos/campHero.css';
 @import './projects/campamentos/campAbout.css';
-
+@import './projects/campamentos/campGallery.css';
+@import './projects/campamentos/campTimeline.css';
+@import './projects/campamentos/campOtherProjects.css';
+@import './projects/campamentos/campCollaborators.css';
 
 *{
   margin:0;
