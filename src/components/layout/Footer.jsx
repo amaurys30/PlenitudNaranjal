@@ -28,7 +28,7 @@ export default function Footer(){
         <div className="footer-brand">
 
           <h2>
-            Plenitud <span>NR</span>
+            Plenitud NR
           </h2>
 
           <div className="footer-line"></div>
@@ -48,17 +48,17 @@ export default function Footer(){
 
             <div className="footer-contact-item">
               <Mail size={18}/>
-              <span>plenitudnaranjal@gmail.com</span>
+              <span>plenitudnr@gmail.com</span>
             </div>
 
             <div className="footer-contact-item">
               <Phone size={18}/>
-              <span>+57 300 000 0000</span>
+              <span>+57 300 9922330</span>
             </div>
 
             <div className="footer-contact-item">
               <Landmark size={18}/>
-              <span>Asociación sin ánimo de lucro</span>
+              <span><strong>Nit:</strong> 901717890</span>
             </div>
 
           </div>
@@ -102,7 +102,7 @@ export default function Footer(){
           </Link>
 
           <Link href="/proyectos">
-            Comedor Estudiantil
+            Cocina social
           </Link>
 
           <Link href="/proyectos">
@@ -130,17 +130,13 @@ export default function Footer(){
             Eventos
           </Link>
 
-          <Link href="/voluntariado">
-            Voluntariado
-          </Link>
-
           <Link href="/contacto">
             Contacto
           </Link>
 
         </div>
 
-        {/* REDES */}
+        {/* REDES
         <div className="footer-social">
 
           <h3>Síguenos</h3>
@@ -177,7 +173,7 @@ export default function Footer(){
 
           </div>
 
-        </div>
+        </div> */}
 
       </div>
 

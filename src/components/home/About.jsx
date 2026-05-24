@@ -25,8 +25,8 @@ export default function About() {
           />
 
           <div className="about-badge">
-            <h3>2025</h3>
-            <p>Desde el inicio</p>
+            <p>Est.</p>
+            <h3>2023</h3>
           </div>
 
         </motion.div>
@@ -70,7 +70,6 @@ export default function About() {
             <span>❤️ Servicio</span>
             <span>✝️ Fe</span>
             <span>🏘️ Comunidad</span>
-            <span>🌟 Propósito</span>
 
           </div>
 

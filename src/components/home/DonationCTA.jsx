@@ -22,10 +22,7 @@ export default function DonationCTA() {
           <Link href="/donaciones" className="btn-primary">
             ❤️ Quiero donar
           </Link>
-
-          <Link href="/contacto" className="btn-secondary">
-            Ser Voluntario
-          </Link>
+          
         </div>
 
       </div>

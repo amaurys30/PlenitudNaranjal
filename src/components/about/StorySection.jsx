@@ -24,7 +24,7 @@ export default function StorySection(){
         >
 
           <img
-            src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1400"
+            src="/images/nosotros.jpeg" //////////////
             alt="Historia Plenitud NR"
             className="story-image"
           />

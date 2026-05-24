@@ -4,20 +4,16 @@ import { motion } from 'framer-motion'
 
 const stats = [
   {
-    number: '+1',
-    text: 'año de comedor estudiantil activo'
+    number: '920',
+    text: 'platos servidos desde 2024'
   },
   {
-    number: '100%',
-    text: 'producción de panela libre de químicos'
+    number: '+3',
+    text: 'toneladas de panela artesanal producida hasta hoy'
   },
   {
-    number: '150',
-    text: 'niños alcanzados en campamentos anuales'
-  },
-  {
-    number: '1',
-    text: 'vereda transformada: Naranjal'
+    number: '+150',
+    text: 'Niños alcanzados en los campamentos anuales'
   }
 ]
 

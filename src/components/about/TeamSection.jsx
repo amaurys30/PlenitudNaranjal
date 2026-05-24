@@ -15,8 +15,8 @@ const members = [
 
   {
     id:1,
-    name:'Delia Castro',
-    role:'Presidenta',
+    name:'Delia Flor Castro Torres',
+    role:'Presidente ',
     image:'/images/equipo/delia.jpeg',
     description:
     'Lidera los proyectos sociales y coordina las actividades comunitarias de Plenitud NR.',
@@ -26,7 +26,7 @@ const members = [
 
   {
     id:2,
-    name:'Fidel Castro',
+    name:'Fidel Enrique Castro Torres',
     role:'Vicepresidente',
     image:'/images/equipo/Fidel.jpeg',
     description:
@@ -37,19 +37,8 @@ const members = [
 
   {
     id:3,
-    name:'Amaurys Castro',
-    role:'Voluntario',
-    image:'/images/equipo/Mao.jpeg',
-    description:
-    'Apoya procesos educativos y recreativos para fortalecer la comunidad.',
-    phrase:
-    '“La unión crea oportunidades.”'
-  },
-
-  {
-    id:4,
-    name:'Mayerlis Castro',
-    role:'Lider monetaria',
+    name:'Mayerlis Castro De Arco',
+    role:'Tesorera',
     image:'/images/equipo/maye.jpeg',
     description:
     'Participa en proyectos de agricultura y sostenibilidad comunitaria.',
@@ -58,14 +47,69 @@ const members = [
   },
 
   {
+    id:4,
+    name:'María Elsi De Arco Nisperusa',
+    role:'Supervisora',
+    image:'/images/equipo/maria.jpeg',
+    description:
+    'Participa en proyectos de agricultura y sostenibilidad comunitaria.',
+    phrase:
+    '“Trabajamos por un futuro sostenible.”'
+  },
+
+  {
     id:5,
-    name:'Daimer Castro',
-    role:'Coodirector agricola',
+    name:'Daimer Castro Vega',
+    role:'Secretario',
     image:'/images/equipo/Daimer.jpeg',
     description:
     'Participa en proyectos de agricultura y sostenibilidad comunitaria.',
     phrase:
     '“Trabajamos por un futuro sostenible.”'
+  },
+
+  {
+    id:6,
+    name:'Rafael Antonio Castro Torres',
+    role:'Fiscal',
+    image:'/images/equipo/rafael.jpeg',
+    description:
+    'Apoya procesos educativos y recreativos para fortalecer la comunidad.',
+    phrase:
+    '“La unión crea oportunidades.”'
+  },
+
+  {
+    id:7,
+    name:'Rebekah Sanchez Cruz ',
+    role:'Asociada',
+    image:'/images/equipo/user.jpg',
+    description:
+    'Apoya procesos educativos y recreativos para fortalecer la comunidad.',
+    phrase:
+    '“La unión crea oportunidades.”'
+  },
+
+  {
+    id:8,
+    name:'Myrna I. Segarra Silva ',
+    role:'Asociada',
+    image:'/images/equipo/user.jpg',
+    description:
+    'Apoya procesos educativos y recreativos para fortalecer la comunidad.',
+    phrase:
+    '“La unión crea oportunidades.”'
+  },
+
+  {
+    id:9,
+    name:'Amaurys Castro',
+    role:'Asociado',
+    image:'/images/equipo/Mao.jpeg',
+    description:
+    'Apoya procesos educativos y recreativos para fortalecer la comunidad.',
+    phrase:
+    '“La unión crea oportunidades.”'
   }
 
 ]
@@ -221,8 +265,6 @@ export default function TeamSection(){
 
                   <Users size={18}/>
 
-                  Equipo Plenitud NR
-
                 </div>
 
                 <h2>
@@ -236,16 +278,6 @@ export default function TeamSection(){
                 <p>
                   {selectedMember.description}
                 </p>
-
-                <div className="team-phrase">
-
-                  <Heart size={18}/>
-
-                  <em>
-                    {selectedMember.phrase}
-                  </em>
-
-                </div>
 
               </div>
 

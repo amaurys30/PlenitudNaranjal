@@ -1,196 +1,185 @@
 .contact-section {
-  background: #ffffff;
-  padding: 120px 20px;
-  position: relative;
+  /* Reducido el padding vertical para que ocupe menos pantalla */
+  padding: 4rem 1.5rem;
+
+  background: linear-gradient(
+    180deg,
+    #f7f6f2 0%,
+    #ffffff 100%
+  );
+
+  display: flex;
+  justify-content: center;
 }
 
 .contact-container {
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 80px;
-  align-items: center;
+  width: 100%;
+  /* Reducido el ancho máximo de 760px a 580px para que sea más estilizado */
+  max-width: 580px;
 }
 
-/* LEFT SIDE */
+.contact-form {
+  position: relative;
+  background: white;
+  
+  /* Reducido el padding interno de 3rem a 2rem */
+  padding: 2rem;
+
+  /* Bordes más sutiles (de 32px a 16px) para un look más limpio */
+  border-radius: 16px;
+
+  border: 1px solid rgba(0,0,0,0.05);
+
+  /* Sombra más suave y menos expansiva */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+
+  overflow: hidden;
+}
+
+.contact-form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* Reducido el grosor de la línea decorativa superior */
+  height: 4px;
+
+  background: linear-gradient(
+    90deg,
+    #1f4d36,
+    #d89a3c
+  );
+}
 
 .contact-tag {
-  color: #d89b3c;
-  letter-spacing: 4px;
-  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  /* Espaciado más compacto */
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(216,154,60,0.08);
+  color: #c68424;
+  
+  /* Texto ligeramente más pequeño */
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+
+.contact-form h2 {
+  /* Tamaño máximo reducido (de 3rem a 2rem) */
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  color: #163322;
+  margin-bottom: 0.5rem;
+  /* Peso visual un poco menos pesado */
   font-weight: 700;
 }
 
-.contact-info h2 {
-  font-size: clamp(2.8rem, 5vw, 4.5rem);
-  color: #14532d;
-  margin-top: 20px;
-  margin-bottom: 24px;
-  line-height: 1.1;
-  font-weight: 600;
+.contact-form p {
+  color: #5e655f;
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+  /* Texto un poco más pequeño para dar aire */
+  font-size: 0.9rem;
 }
 
-.contact-info p {
-  color: #4b5563;
-  font-size: 1.08rem;
-  line-height: 1.9;
-  margin-bottom: 45px;
-  max-width: 550px;
-}
-
-.contact-items {
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-}
-
-.contact-item-group {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
-
-.icon-wrapper {
-  width: 52px;
-  height: 52px;
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.red-bg {
-  background: rgba(239, 68, 68, 0.12);
-  color: #ef4444;
-}
-
-.blue-bg {
-  background: rgba(59, 130, 246, 0.12);
-  color: #3b82f6;
-}
-
-.purple-bg {
-  background: rgba(168, 85, 247, 0.12);
-  color: #a855f7;
-}
-
-.green-bg {
-  background: rgba(34, 197, 94, 0.12);
-  color: #22c55e;
-}
-
-.contact-item-group label {
-  display: block;
-  font-size: 12px;
-  font-weight: 700;
-  color: #9ca3af;
-  letter-spacing: 2px;
-  margin-bottom: 4px;
-}
-
-.contact-item-group span {
-  color: #14532d;
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-/* FORM */
-
-.form-wrapper {
-  background: #f8faf8;
-  padding: 42px;
-  border-radius: 32px;
-  border: 1px solid rgba(20, 83, 45, 0.06);
-  box-shadow: 0 10px 40px rgba(0,0,0,0.04);
-}
-
-.contact-form h3 {
-  color: #14532d;
-  font-size: 1.7rem;
-  margin-bottom: 28px;
-  font-weight: 600;
-}
+/* INPUTS */
 
 .input-group {
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  /* Menor separación entre campos */
+  margin-bottom: 1.2rem;
 }
 
 .input-group label {
-  display: block;
-  font-size: 13px;
+  margin-bottom: 0.4rem;
+  color: #1f3327;
+  /* Texto de etiqueta más sutil y minimalista */
+  font-size: 0.82rem;
   font-weight: 600;
-  color: #374151;
-  margin-bottom: 10px;
 }
 
-.contact-form input,
-.contact-form select,
-.contact-form textarea {
+.input-group input,
+.input-group select,
+.input-group textarea {
   width: 100%;
-  border: 1px solid #e5e7eb;
-  background: white;
-  padding: 16px 18px;
-  border-radius: 16px;
-  font-size: 0.98rem;
-  color: #374151;
-  transition: 0.3s ease;
-  outline: none;
-  box-sizing: border-box;
+  /* Relleno de inputs reducido para que no se vean tan altos */
+  padding: 0.75rem 0.9rem;
+  /* Bordes de inputs reducidos de 16px a 8px */
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: #fafafa;
+  font-size: 0.9rem;
+
+  transition:
+    border-color .3s ease,
+    box-shadow .3s ease,
+    background .3s ease;
 }
 
-.contact-form input:focus,
-.contact-form select:focus,
-.contact-form textarea:focus {
-  border-color: #14532d;
-  box-shadow: 0 0 0 4px rgba(20, 83, 45, 0.08);
-}
-
-.contact-form textarea {
+.input-group textarea {
   resize: none;
 }
 
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+  outline: none;
+  background: white;
+  border-color: #d89a3c;
+  /* Efecto de foco (glow) más fino */
+  box-shadow: 0 0 0 3px rgba(216,154,60,0.08);
+}
+
+/* BUTTON */
+
 .contact-form button {
   width: 100%;
-  background: #14532d;
-  color: white;
   border: none;
-  padding: 18px;
-  border-radius: 999px;
-  font-size: 1rem;
+  margin-top: 0.6rem;
+  /* Botón más estilizado y menos alto */
+  padding: 0.8rem 1.2rem;
+  /* Esquinas consistentes con los inputs */
+  border-radius: 8px;
+
+  background: linear-gradient(
+    135deg,
+    #1f4d36,
+    #2f6b4d
+  );
+  color: white;
+  font-size: 0.95rem;
   font-weight: 600;
-  cursor: pointer;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 12px;
-  transition: 0.3s ease;
+  cursor: pointer;
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease;
 }
 
 .contact-form button:hover {
-  transform: translateY(-3px);
-  background: #0f3f22;
+  /* Efecto de hover más suave */
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(31,77,54,0.2);
 }
 
-/* MOBILE */
+/* RESPONSIVE */
 
-@media (max-width: 900px) {
-
+@media(max-width:768px){
   .contact-section {
-    padding: 90px 20px;
+    padding: 2.5rem 1rem;
   }
 
-  .contact-container {
-    grid-template-columns: 1fr;
-    gap: 60px;
-  }
-
-  .contact-info h2 {
-    font-size: 2.8rem;
-  }
-
-  .form-wrapper {
-    padding: 30px;
+  .contact-form {
+    /* Ajuste para pantallas pequeñas manteniendo la armonía */
+    padding: 1.5rem 1.2rem;
+    border-radius: 12px;
   }
 }

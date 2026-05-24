@@ -22,7 +22,7 @@ export default function NosotrosPage(){
       <MissionVision />
       <ValuesSection />
       <TeamSection />
-      <TimelineSection />
+      {/* <TimelineSection /> */}
 
       <Footer/>
     </>

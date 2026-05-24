@@ -17,7 +17,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
         >
           <span className="hero-badge">
-            🌿 Vereda Naranjal · Colombia
+            📍 Vereda Naranjal · Colombia
           </span>
         </motion.div>
 

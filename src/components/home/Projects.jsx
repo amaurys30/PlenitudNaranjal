@@ -1,35 +1,53 @@
 'use client'
 
+import Link from 'next/link'
+
 import { motion, AnimatePresence } from 'framer-motion'
 import { useState } from 'react'
 
 const projects = [
   {
     title: 'Campamentos de Niños',
+
     description:
       'Cada año reunimos a niños de la comunidad para compartir valores, actividades recreativas y enseñanzas basadas en la fe y la armonía.',
+
     image: '/images/Campamento.jpeg',
+
     tag: 'Educación · Valores',
+
+    href: '/proyectos/campamentos',
   },
 
   {
-    title: 'Comedor Estudiantil',
+    title: 'Cocina social',
+
     description:
-      'Desde 2025 brindamos alimentación a los niños de la institución educativa de la vereda Naranjal, apoyando su bienestar y crecimiento.',
+      'Desde 2024 brindamos alimentación a los niños de la institución educativa de la vereda Naranjal, apoyando su bienestar y crecimiento.',
+
     image: '/images/Comedor.jpeg',
-    tag: 'Activo desde 2025',
+
+    tag: 'Activo desde 2024',
+
+    href: '/proyectos/comedor-estudiantil',
   },
 
   {
     title: 'Producción de Panela',
+
     description:
       'Nuestro trapiche produce panela 100% natural con cultivos libres de químicos y procesos sostenibles que respetan la tierra.',
+
     image: '/images/panelas.jpeg',
+
     tag: 'Agricultura sostenible',
+
+    href: '/proyectos/panela',
   },
 ]
 
 export default function Projects() {
+
   const [selectedImage, setSelectedImage] = useState(null)
 
   return (
@@ -76,8 +94,13 @@ export default function Projects() {
             key={index}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: index * 0.2 }}
+            transition={{
+              duration: 0.6,
+              delay: index * 0.2
+            }}
           >
+
+            {/* IMAGEN */}
 
             <div
               className="project-image"
@@ -86,7 +109,9 @@ export default function Projects() {
                 cursor: 'zoom-in'
               }}
               onClick={() => setSelectedImage(project.image)}
-            ></div>
+            />
+
+            {/* CONTENIDO */}
 
             <div className="project-content">
 
@@ -94,9 +119,22 @@ export default function Projects() {
                 {project.tag}
               </span>
 
-              <h3>{project.title}</h3>
+              <h3>
+                {project.title}
+              </h3>
 
-              <p>{project.description}</p>
+              <p>
+                {project.description}
+              </p>
+
+              {/* BOTÓN */}
+
+              <Link
+                href={project.href}
+                className="project-link"
+              >
+                Ver proyecto →
+              </Link>
 
             </div>
 
@@ -106,9 +144,12 @@ export default function Projects() {
 
       </div>
 
-      {/* Animación de la imagen ampliada */}
+      {/* LIGHTBOX */}
+
       <AnimatePresence>
+
         {selectedImage && (
+
           <motion.div
             className="lightbox-overlay"
             initial={{ opacity: 0 }}
@@ -129,21 +170,39 @@ export default function Projects() {
               cursor: 'zoom-out'
             }}
           >
+
             <motion.img
               src={selectedImage}
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.8, opacity: 0 }}
-              transition={{ type: 'spring', damping: 25, stiffness: 300 }}
+              initial={{
+                scale: 0.8,
+                opacity: 0
+              }}
+              animate={{
+                scale: 1,
+                opacity: 1
+              }}
+              exit={{
+                scale: 0.8,
+                opacity: 0
+              }}
+              transition={{
+                type: 'spring',
+                damping: 25,
+                stiffness: 300
+              }}
               style={{
                 maxWidth: '90%',
                 maxHeight: '85vh',
-                borderRadius: '8px',
-                boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)'
+                borderRadius: '10px',
+                boxShadow:
+                  '0 25px 50px -12px rgba(0,0,0,0.5)'
               }}
             />
+
           </motion.div>
+
         )}
+
       </AnimatePresence>
 
     </section>
