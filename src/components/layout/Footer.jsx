@@ -48,7 +48,7 @@ export default function Footer(){
 
             <div className="footer-contact-item">
               <Mail size={18}/>
-              <span>plenitudnr@gmail.com</span>
+              <span>info@plenitudnr.com.co</span>
             </div>
 
             <div className="footer-contact-item">
