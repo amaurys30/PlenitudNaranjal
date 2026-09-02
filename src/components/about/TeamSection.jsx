@@ -103,7 +103,7 @@ const members = [
 
   {
     id:9,
-    name:'Amaurys Castro',
+    name:'Amaurys Castro De Arco',
     role:'Asociado',
     image:'/images/equipo/Mao.jpeg',
     description:
